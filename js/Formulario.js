@@ -1,7 +1,11 @@
+window.onload = function () {
+
 var textXML = '<preguntes><pregunta tipus="text"><text>Quin és el color del cel?</text>'+
 '<resposta>blau</resposta></pregunta></preguntes>';
 
-window.onload = function () {
+
+
+
 	
 	parser = new DOMParser();
 	document.getElementById("p1").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;

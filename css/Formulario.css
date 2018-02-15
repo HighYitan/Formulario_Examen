@@ -1,1 +1,60 @@
-a
+body{
+	background-color:red;
+}
+#body{
+	width:100%;
+	background-color:red;
+	height:100%;
+}
+.pregunta{
+	width:80%;
+	background-color:green;
+	border-style:solid;
+	border-width: 5px;
+	padding:3%;
+	margin:3%;
+}
+#enviar{
+	width:80%;
+	background-color:purple;
+	border-style:solid;
+	border-width: 5px;
+	padding:3%;
+	margin:3%;
+}
+label{
+    font-size: 150%;
+	color:purple;
+	font-weight: bold;
+	-webkit-text-stroke-width: 1.2px;
+	-webkit-text-stroke-color: #000;
+}
+input[type=text] {
+    border: 5px solid purple;
+    border-radius: 30px;
+	color:red;
+	background-color:orange;
+	color:blue;
+	font-weight: bold;
+	width:50%;
+	height:3vw;
+	font-size:125%;
+}
+input[type=radio] {
+    border: 0px;
+    width: 10%;
+    height: 3vw;
+	margin:3vw;
+}
+input[type=checkbox] {
+    border: 0px;
+    width: 10%;
+    height: 3vw;
+	margin:3vw;
+}
+input[type=select] {
+    border: 0px;
+    width: 10%;
+    height: 3vw;
+	margin:3vw;
+}

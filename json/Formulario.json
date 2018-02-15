@@ -1,0 +1,114 @@
+{
+	"question": [
+      {
+        "type": "text",
+        "title": "Extensió d'un fitxer full d'estill",
+        "answer": "css"
+      },
+      {
+        "type": "text",
+        "title": "Quin és nom de l'element arrel d'un document html?",
+        "answer": "html"
+      },
+      {
+        "type": "select",
+        "title": "Un lleó mort de fam, qué menja?",
+        "option": [
+          "Carn",
+          "Peix",
+          "Res, està mort",
+          "Particulas de CO2"
+        ],
+        "answer": "2"
+      },
+      {
+        "type": "select",
+        "title": "Un cat mort de fam, qué menja?",
+        "option": [
+          "Carn",
+          "Peix",
+          "Res, està mort",
+          "Particulas de CO2"
+        ],
+        "answer": "2"
+      },
+      {
+        "type": "multiple",
+        "title": "Marca els nombres senars?",
+        "option": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": [
+          "1",
+          "3"
+        ]
+      },
+      {
+        "type": "multiple",
+        "title": "Marca els nombres pars?",
+        "option": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": [
+          "2",
+          "4"
+        ]
+      },
+      {
+        "type": "checkbox",
+        "title": "Marca els nombres pars?",
+        "option": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": [
+          "2",
+          "4"
+        ]
+      },
+      {
+        "type": "checkbox",
+        "title": "Marca els nombres senars?",
+        "option": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": [
+          "1",
+          "3"
+        ]
+      },
+      {
+        "type": "radio",
+        "title": "Un cat mort de fam, qué menja?",
+        "option": [
+          "Carn",
+          "Peix",
+          "Res, està mort",
+          "Particulas de CO2"
+        ],
+        "answer": "2"
+      },
+      {
+        "type": "radio",
+        "title": "Un cat mort de fam, qué menja?",
+        "option": [
+          "Carn",
+          "Peix",
+          "Res, està mort",
+          "Particulas de CO2"
+        ],
+        "answer": "2"
+      }
+    ]
+}
