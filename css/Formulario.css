@@ -10,6 +10,7 @@ body{
 	width:80%;
 	background-color:green;
 	border-style:solid;
+	border-color:black;
 	border-width: 5px;
 	padding:3%;
 	margin:3%;
@@ -18,12 +19,28 @@ body{
 	width:80%;
 	background-color:purple;
 	border-style:solid;
+	border-color:black;
 	border-width: 5px;
 	padding:3%;
 	margin:3%;
 }
 label{
     font-size: 150%;
+	color:purple;
+	font-weight: bold;
+	-webkit-text-stroke-width: 1.2px;
+	-webkit-text-stroke-color: #000;
+}
+label[for="select_multiple1"]{
+    font-size: 300%;
+	color:purple;
+	font-weight: bold;
+	-webkit-text-stroke-width: 1.2px;
+	-webkit-text-stroke-color: #000;
+	/* añadir margin bottom o algo asi en este y el siguiente */
+}
+label[for="select_multiple2"]{
+    font-size: 300%;
 	color:purple;
 	font-weight: bold;
 	-webkit-text-stroke-width: 1.2px;
@@ -52,9 +69,15 @@ input[type=checkbox] {
     height: 3vw;
 	margin:3vw;
 }
-input[type=select] {
+select:not([multiple]) {
     border: 0px;
     width: 10%;
     height: 3vw;
+	margin:3vw;
+}
+select[multiple] {
+    border: 0px;
+    width: 10%;
+    height: 5vw;
 	margin:3vw;
 }
