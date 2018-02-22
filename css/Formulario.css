@@ -24,8 +24,20 @@ body{
 	padding:3%;
 	margin:3%;
 }
+input[name=enviar]{
+	width:60%;
+	background-color:white;
+	border-style:solid;
+	border-color:black;
+	border-width: 5px;
+	padding:3%;
+	margin:3%;
+	-webkit-text-stroke-width: 1.2px;
+	-webkit-text-stroke-color: #000;
+	font-size: 300%;
+}
 label{
-    font-size: 150%;
+    font-size: 300%;
 	color:purple;
 	font-weight: bold;
 	-webkit-text-stroke-width: 1.2px;
@@ -37,6 +49,8 @@ label[for="select_multiple1"]{
 	font-weight: bold;
 	-webkit-text-stroke-width: 1.2px;
 	-webkit-text-stroke-color: #000;
+	position:absolute;
+	margin-top:3%
 	/* añadir margin bottom o algo asi en este y el siguiente */
 }
 label[for="select_multiple2"]{
@@ -45,6 +59,8 @@ label[for="select_multiple2"]{
 	font-weight: bold;
 	-webkit-text-stroke-width: 1.2px;
 	-webkit-text-stroke-color: #000;
+	position:absolute;
+	margin-top:3%
 }
 input[type=text] {
     border: 5px solid purple;
@@ -79,5 +95,5 @@ select[multiple] {
     border: 0px;
     width: 10%;
     height: 5vw;
-	margin:3vw;
+	margin: 3vw;
 }
