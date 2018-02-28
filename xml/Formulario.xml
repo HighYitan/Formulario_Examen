@@ -3,13 +3,13 @@
 <questions>
 	<question>
 		<type>text</type>
-		<title>Extensió d'un fitxer full d'estill</title>
-		<answer>css</answer>
+		<title>¿Quién es el protagonista del primer Castlevania?</title>
+		<answer>Simon Belmont</answer>
 	</question>
 	<question>
 		<type>text</type>
-		<title>Quin és nom de l'element arrel d'un document html?</title>
-		<answer>html</answer>
+		<title>¿Quién es el protagonista de Castlevania: Dawn of Sorrow?</title>
+		<answer>Soma Cruz</answer>
 	</question>
 	<question>
 		<type>select</type>

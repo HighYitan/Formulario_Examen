@@ -13,29 +13,61 @@ window.onload = function () {
 	};
 	xhttp.open("GET", url, true); //Abre la url del JSON
 	xhttp.send();
-
+}	
+	
+	
 	// función personalizada que gestiona la respuesta a la petición de fichero.
 	
-	function gestionarXml(datosXml){
+	function gestionarJson(datosJson){
 		//Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
-		var xmlDoc = datosXml.responseXML;
-		imprimirTitulos(xmlDoc);
-		//preguntasTexto
-		for(var answers=2 ; answers<4 ; answers++){
-			respuestasTexto[answers]=xmlDoc.getElementsByTagName("answer")[answers].innerHTML;
+		var obj = JSON.parse(datosJson);
+		var questionLength = Object.keys(obj.question).length;
+		var preg = document.getElementsByClassName("preg");
+		//**TEXT*************************/
+		
+		var preguntasText;
+		for (i = 0; i < 2; i++) { //  TODOS LOS BUCLES EMPIEZAN POR 0 HASTA LLEGRAR A LA PREGUNTA i-1
+			preguntasText = obj.question[i].title;
+			mostrarText(i, preguntasText);
+		}
+		//**text**************************/
+
+		
+		
+		//**SELECT************************/
+		for (i = 2; i < 4; i++) {
+
+			var tituloSelect = obj.question[i].title; //ALMACENA LA PREGUNTA
+			var numOpcionesSelect = obj.question[i].option.length; //ALMACENA EL NUM. DE OPCIONES SELECT
+			var opSelect = []; //ALMACENA EN EL ARRAY CADA UNA DE LAS PREGUNTAS
+
+			for (preg = 0; preg < obj.question[i].option.length; preg++) {
+				opSelect[preg] = obj.question[i].option[preg];
+			}
+		mostrarSelect(i, tituloSelect, opSelect);
+		}
+  //**select************************/	
+		
 	}
 	
+	//FUNCIONES
 	
-	
-	
-	
-	
-		var obj = JSON.parse(dadesJson);
-	
-	parser = new DOMParser();
-	document.getElementById("p1").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
-	document.getElementById("t1").innerHTML = xmlDoc.getElementsByTagName("question")[0].getAttribute("type");
-	document.getElementById("r1").innerHTML = xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue;
-	document.getElementById("o1").innerHTML = xmlDoc.getElementsByTagName("option")[0].childNodes[0].nodeValue;
-	
-}
+	function mostrarSelect(numPreg, titulo, opciones) {
+
+		document.getElementsByTagName("h3")[numPreg].innerHTML = titulo;
+
+		var select = document.getElementsByTagName("select")[0];
+
+		for (j = 0; j < opciones.length; j++) {
+			var option = document.createElement("option");
+
+			option.text = opciones[j];
+			option.value = j + 1;
+			select.options.add(option);
+		}
+	}
+
+
+	function mostrarText(i, pregunta) {
+		document.getElementsByTagName("h3")[i].innerHTML = pregunta;
+	}
